@@ -1,1 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,600,700|Merriweather:300,400,700,900|Open+Sans:300,400,700|Pompiere&display=swap&subset=cyrillic');
+
 @import url('core.css');
+@import url('blocks/header.css');
+@font-face {
+    font-family: 'neotericregular';
+    src: url('neotericbold-webfont.woff2') format('woff2'),
+         url('neotericbold-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'neotericbold';
+    src: url('neotericreg-webfont.woff2') format('woff2'),
+         url('neotericreg-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ostrich_sansblack';
+    src: url('ostrichsans-black-webfont.woff2') format('woff2'),
+         url('ostrichsans-black-webfont.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'zurich_black_extended_bt';
+    src: url('zurichbt-webfont.woff2') format('woff2'),
+         url('zurichbt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bank.ttf';
+    src: url('../assets/fonts/Bank.ttf') format('truetype'),
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica.woff';
+    src: url('../assets/fonts/Helvetica.woff') format('woff'),
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyriadPro-Semibold.woff';
+    src: url('../assets/fonts/Helvetica.woff') format('woff'),
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'neotericbold-webfont.woff';
+    src: url('../assets/fonts/neotericbold-webfont.woff') format('woff'),
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'neotericreg-webfont.woff';
+    src: url('../assets/fonts/neotericreg-webfont.woff') format('woff'),
+    font-weight: 400;
+    font-style: normal;
+}
