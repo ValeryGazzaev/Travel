@@ -32,6 +32,13 @@
 	border: none;
 }
 
+input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
 .header-top form input::placeholder {
 	font-family: 'Merriweather', serif;
 	font-weight: 300;
@@ -66,3 +73,81 @@
 .header-top .sub-btn:active {
 	transform: scale(0.98);
 }
+
+.header-nav,
+.header-social,
+.header-middle {
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.header-middle-wrap {
+	position: relative;
+	margin-top: 35px;
+}
+
+.header-middle {
+	padding: 20px 0 20px;
+}
+
+.header-middle-wrap:after,
+.header-middle-wrap:before {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background-color: rgba(36, 41, 41, 0.1);
+}
+
+.header-middle-wrap:after {
+	top: 3px;
+}
+
+.header-nav {
+	flex-basis: 765px;
+}
+
+.header-nav a {
+	font-family: 'Myriad Pro', Arial, sans-serif;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 30px;
+	letter-spacing: 1.6px;
+	text-transform: uppercase;
+	color: #242929;
+}
+
+.header-nav a:hover {
+	color: #ffc908;
+}
+
+.header-nav a:active {
+	color: #3E3E40;
+}
+
+.header-social {
+	flex-basis: 193px;
+}
+
+.header-social i {
+	font-size: 14px;
+	color: #575c5c;
+}
+
+.header-social i:hover {
+	color: #ffc908;
+}
+
+.header-social .social-btn:hover {
+	transform: scale(1.1);	
+}
+
+.header-social .social-btn:active {
+	transform: scale(1.0);
+}
+
+/* Sliders */
+
