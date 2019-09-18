@@ -151,3 +151,207 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 /* Sliders */
 
+
+/* first slider */
+.header-slider-wrap {
+	position: relative;
+	overflow: hidden;
+}
+
+.header-slider-wrap .slider-promo {
+	position: absolute;
+	z-index: 10;
+	color: #fff;
+}
+
+.slider-promo .title-middle {
+	 font-family: 'Bank Gothic Light', sans-serif;
+	 font-size: 48px;
+	 line-height: 36px;
+}
+
+/* layer */
+.header-slider-wrap::before {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient (225deg, rgba(0, 0, 0, 1));
+	z-index: 10;
+}
+
+.header-slider-first {
+	position: absolute;
+	top: 570px;
+	left: 104px;
+	height: 240px;
+	z-index: 11;
+	overflow-y: hidden;
+}
+
+.header-slider-first .slider-title {
+	font-family: 'Myriad Pro', sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 20px;	
+	color: #fff;
+}
+
+.header-slider-first input {
+	display: none;
+}
+
+.header-slider-first-slides {
+	height: 300%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: space-between;
+	transition: all 1s ease;
+}
+
+.header-slider-first-slides [class^="slide-"] {
+	height: 240px;
+}
+
+.header-slider-first-slides [class^="slide-"] p {
+	color: #fff;
+}
+
+.header-slider-first-slides [class^="slide-"] p:nth-of-type(1) {
+	font-size: 44px;
+	line-height: 52px;
+	text-transform: uppercase;
+	letter-spacing: -1.32px;
+	font-family: 'zurich_black_extended_bt', sans-serif;
+}
+
+.header-slider-first-slides [class^="slide-"] p:nth-of-type(2) {
+	font-size: 15px;
+	line-height: 18px;
+	letter-spacing: -0.15px;
+	text-transform: none;
+	font-family: 'Myriad Pro', sans-serif;
+}
+
+/* up arrow */
+#heder-first-btn-1:checked ~ .header-first-controls label:nth-child(3), 
+#heder-first-btn-2:checked ~ .header-first-controls label:nth-child(1), 
+#heder-first-btn-3:checked ~ .header-first-controls label:nth-child(2) {
+	display: block;
+	width: 45px;
+	height: 45px;
+	background-color: red;
+	box-shadow: inset 0 0 0 1px #fff;
+} 
+
+/* down arrow */
+#header-first-btn-1:checked ~ .header-first-controls label:nth-child(2), 
+#header-first-btn-2:checked ~ .header-first-controls label:nth-child(3), 
+#header-first-btn-3:checked ~ .header-first-controls label:nth-child(1) {
+	display: block;
+	width: 45px;
+	height: 45px;
+	background-color: red;
+	box-shadow: inset 0 0 0 1px #fff;
+} 
+
+#header-first-btn-1:checked ~ .header-slider-first-inner .header-slider-first-slides {
+	transform: translateY(0);
+} 
+
+#header-first-btn-2:checked ~ .header-slider-first-inner .header-slider-first-slides {
+	transform: translateY(-240px);
+} 
+
+#header-first-btn-3:checked ~ .header-slider-first-inner .header-slider-first-slides {
+	transform: translateY(-480px);
+}
+
+
+/* second slider */
+
+.header-slider-second {
+	width: 1920px;
+}
+
+.header-slider-second input {
+	display: none;
+}
+
+.header-slider-second-slides {
+	width: 300%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	transition: all 1s ease;
+}
+
+.header-slider-second-inner {
+	overflow-x: hidden;
+}
+
+.header-slider-second-slides [class^="slide-"] {
+	width: 1920px;
+}
+
+.header-second-controls {
+	position: absolute;
+	bottom: 100px;
+	left: 104px;
+	width: 58px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+	z-index: 10;
+}
+
+.header-second-controls label {
+	display: block;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background-color: #fff;
+}
+
+#header-second-btn-1:checked ~ .header-second-controls label:nth-child(1),
+#header-second-btn-2:checked ~ .header-second-controls label:nth-child(2),
+#header-second-btn-3:checked ~ .header-second-controls label:nth-child(3),
+#header-second-btn-4:checked ~ .header-second-controls label:nth-child(4),
+#header-second-btn-5:checked ~ .header-second-controls label:nth-child(5) {
+	background-color: transparent;
+	border: 1px solid #fff;
+}
+
+#header-second-btn-1:checked ~ .header-slider-second-inner .header-slider-second-slides {
+	transform: translateX(0);
+}
+#header-second-btn-2:checked ~ .header-slider-second-inner .header-slider-second-slides {
+	transform: translateX(-1920px);
+}
+#header-second-btn-3:checked ~ .header-slider-second-inner .header-slider-second-slides {
+	transform: translateX(-3840px);
+}
+#header-second-btn-4:checked ~ .header-slider-second-inner .header-slider-second-slides {
+	transform: translateX(-5760px);
+}
+#header-second-btn-5:checked ~ .header-slider-second-inner .header-slider-second-slides {
+	transform: translateX(-7680px);
+}
