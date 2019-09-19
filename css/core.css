@@ -30,7 +30,6 @@
 }
 
 .btn:hover {
-	transform: scale(1.1);
 	background-color: #242929;
 	color: #ffc908;
 }
