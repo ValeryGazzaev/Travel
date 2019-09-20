@@ -160,13 +160,37 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .header-slider-wrap .slider-promo {
 	position: absolute;
+	top: 140px;
+	left: 39px;
 	z-index: 10;
 	color: #fff;
+	text-align: center;
 }
 
 .slider-promo .title-middle {
-	 font-size: 48px;
-	 line-height: 36px;
+	font-family: 'Bank Gothic Light BT', sans-serif;
+	font-size: 48px;
+	line-height: 36px;
+}
+
+.slider-promo p:nth-child(2) {
+	position: relative;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 16px;
+	letter-spacing: -0.60px;
+	margin: 6px 0 0 10px;
+}
+
+.slider-promo p:nth-child(2):before {
+	position: absolute;
+	content: "";
+	top: 2px;
+	left: 19px;
+	border: 6.5px solid #e21712;
+	border-left-color: transparent;
+	border-bottom-color: transparent;
 }
 
 /* layer */
@@ -183,7 +207,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .header-slider-first {
 	position: absolute;
-	top: 570px;
+	top: 579px;
 	padding-left: 104px;
 	height: 220px;
 	z-index: 11;
@@ -193,11 +217,12 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .header-slider-first .slider-title {
 	font-family: 'Myriad Pro', sans-serif;
 	text-transform: uppercase;
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 18px;
-	line-height: 20px;	
+	line-height: 19px;
+	letter-spacing: -0.50px;
 	color: #fff;
-	margin: 0 0 20px -60px;
+	margin: 0 0 13px -67px;
 }
 
 .header-slider-first input {
@@ -238,6 +263,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 	text-transform: uppercase;
 	letter-spacing: -1.32px;
 	font-family: 'zurich_black_extended_bt', sans-serif;
+	margin-bottom: 6px;
 }
 
 .header-slider-first-slides [class^="slide-"] p:nth-of-type(2) {
@@ -247,7 +273,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 	letter-spacing: -0.15px;
 	text-transform: none;
 	font-family: 'Myriad Pro', sans-serif;
-	margin-bottom: 30px;
+	margin-bottom: 33px;
 }
 
 .header-slider-first-slides [class^="slide-"] a {
@@ -312,7 +338,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 #header-first-btn-3:checked ~ .header-first-controls label:nth-child(1) {
 	position: absolute;
 	display: block;
-	top: 50px;
+	top: 51px;
 	width: 45px;
 	height: 45px;
 	background-repeat: no-repeat;
@@ -370,7 +396,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .header-second-controls {
 	position: absolute;
-	bottom: 100px;
+	bottom: 110px;
 	left: 104px;
 	width: 58px;
 	display: -webkit-flex;
