@@ -40,13 +40,37 @@
 	color: #242929;
 }
 
-
 .title {
 	font-weight: 700;
 	font-size: 30px;
 	line-height: 48px;
 	color: #413f3f;
 }
+
+.title2 {
+	font-family: 'Pompiere';
+	font-size: 38px;
+	line-height: 60px;
+	color: #282d2d;
+}
+
+.title2 {
+	font-family: 'Pompiere';
+	font-size: 38px;
+	line-height: 60px;
+	color: #282d2d;
+}
+
+.title3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 60px;
+	text-transform: uppercase;
+	letter-spacing: 4.8px;
+	color: #ffc908;
+}
+
 
 a {
 	text-decoration: none;
