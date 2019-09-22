@@ -1,0 +1,230 @@
+.aside {
+	flex-basis: 31.6%;
+	margin-right: 34px;
+}
+
+
+
+.about-block,
+.where-block {
+	position: relative;
+	background-color: #fff;
+	box-shadow: 0px 11px 15.84px 2.16px rgba(0, 0, 0, 0.33);
+	text-align: center;
+	padding: 24px 22px 19px;
+	margin-bottom: 46px;
+} 
+
+.about-block::before,
+.where-block::before {
+	position: absolute;
+	content: "";
+	top: 50%;
+	left: 50%;
+	width: 460px;
+	height: 800px;
+	transform: translate(-50%, -50%);
+	box-shadow: inset 0 0 0 3px rgba(168, 174, 174, 0.40);
+	z-index: 10;
+}
+
+.about-block .title,
+.where-block .title {
+	position: relative;
+	width: 242px;
+	margin: 0 auto;
+	margin-bottom: 27px;
+	background-color: #fff;
+	z-index: 10;
+}
+
+.where-block iframe {
+	position: relative;
+	box-shadow: 0 0 0 15px #fff;
+	z-index: 10;
+}
+
+.about-block {
+	padding: 25px 0 0px;
+	margin-bottom: 42px;
+}
+
+.about-block::before {
+	height: 800px;
+}
+
+.about-block .title {
+	margin-bottom: 10px;
+	line-height: 40px;
+}
+
+.about-block p:nth-child(2) {
+	max-width: 440px;
+	position: relative;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	line-height: 40px;
+	box-shadow: 0 0 0 17px #fff;
+	background-color: #fff;
+	z-index: 10;
+}
+
+.about-block p:nth-child(3) {
+	position: relative;
+	font-size: 36px;
+	line-height: 58px;
+	font-family: 'neotericregular', sans-serif;
+	z-index: 11;
+}
+
+.about-social {
+	position: relative;
+	max-width: 300px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	z-index: 11;
+}
+
+.about-social::before {
+	position: absolute;
+	content: "";
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 0;
+	width: 432px;
+	height: 4px;
+	background-color: rgba(168, 174, 174, 0.40);
+}
+
+.about-social .social-btn {
+	font-size: 36px;
+	line-height: 73px;
+	color: #575c5c;
+}
+
+.about-social .social-btn:hover {
+	color: #ffc908;
+}
+
+.about-social .social-btn:active {
+	transform: scale(0.90);
+	color: #575c5c;
+}
+
+.about-block .photo {
+	position: relative;
+	box-shadow: 0 -150px 0 0 #fff;
+	bottom: -11px;
+	z-index: 10;
+}
+
+.newsletter-block {
+	position: relative;
+	text-align: center;
+	box-shadow: 0px 11px 15.84px 2.16px rgba(0, 0, 0, 0.33);
+}
+
+.newsletter-block::before {
+	position: absolute;
+	content: "";
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	height: 200px;
+	transform: translate(-50%, -50%);
+	box-shadow: inset 0 0 0 3px rgba(168, 174, 174, 0.40);
+	z-index: 10;
+}
+
+.newsletter-block::after {
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 3px;
+	background-color: rgba(168, 174, 174, 0.40);
+	z-index: 20;
+}
+
+.newsletter-block .title2 {
+	position: relative;
+	max-width: 355px;
+	margin-bottom: 23px;
+	margin: 0 auto;
+	background-color: #fff;
+	z-index: 10;
+}
+
+.newsletter-block form {
+	position: relative;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	text-align: center;
+	background-color: #fff;
+	z-index: 10;
+}
+
+.newsletter-block input {
+	border: none;
+	outline: none;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.newsletter-block input:nth-child(1) {
+	width: 90%;
+	font-size: 20px;
+	line-height: 70px;
+	font-family: 'Merriweather', serif;
+	font-weight: 300;
+	height: 55px;
+	padding: 0 30px;
+	box-shadow: inset 0 -2px 0 0 #242929;
+	color: #a8aeae;
+}
+
+.newsletter-block input:nth-child(1)::placeholder {
+	text-align: center;
+	font-size: 20px;
+	line-height: 70px;
+	font-family: 'Merriweather', serif;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.newsletter-block input:nth-child(2) {
+	text-transform: uppercase;
+	font-family: 'Dosis', sans-serif;
+	font-size: 20px;
+	line-height: 58px;
+	font-weight: 700;
+	letter-spacing: 4px;
+	color: #fff;
+	background-color: #a9b3e3;
+	margin: 27px 0 62px;
+}
+
+.newsletter-block input:nth-child(2):hover {
+	background-color: #586ccc;
+}
+
+.newsletter-block input:nth-child(2):active {
+	background-color: #eee;
+	color: #586ccc;
+	font-size: 18px;
+}
+

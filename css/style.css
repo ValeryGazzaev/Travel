@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900&display=swap&subset=cyrillic');
 @import url('core.css');
 @import url('blocks/header.css');
-
+@import url('blocks/aside.css');
 @font-face {
     font-family: 'neotericregular';
     src: url('../assets/fonts/neotericbold-webfont.woff2') format('woff2'),
