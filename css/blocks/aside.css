@@ -123,6 +123,7 @@
 	z-index: 10;
 }
 
+.tags-block,
 .recent-posts,
 .categories-block,
 .newsletter-block {
@@ -132,6 +133,7 @@
 	box-shadow: 0px 11px 15.84px 2.16px rgba(0, 0, 0, 0.33);
 }
 
+.tags-block::before,
 .recent-posts::before,
 .categories-block::before,
 .newsletter-block::before {
@@ -157,6 +159,7 @@
 	z-index: 20;
 }
 
+.tags-block .title2,
 .recent-posts .title2,
 .categories-block	.title2,
 .newsletter-block .title2 {
@@ -279,12 +282,14 @@
 .categories-block a:hover {
 	color: #ffc908;
 }
+
 .categories-block a:active {
 	color: #eee;
 }
 
 .recent-posts {
 	padding: 17px 22px 33px;
+	margin-bottom: 35px;
 }
 
 .recent-posts .title2 {
@@ -315,6 +320,18 @@
 	margin-left: 43px;
 }
 
+.posts-text p {
+	font-size: 24px;
+	line-height: 37px;
+	letter-spacing: 3px;
+	font-family: 'Open Sans', sans-serif;
+	color: #282d2d;
+}
+
+.posts-text p:nth-of-type(2) {
+	color: #a8aeae;
+}
+
 .recent-posts-blocks [class^="block-"] .image-post {
 	margin: 6.5px 0 19px;
 	width: 186px;
@@ -328,3 +345,130 @@
 	background-image: url("../../img/johntravel.jpg");
 }
 
+.tags-block {
+	margin-bottom: 46px;
+	padding: 17px 0 27px;
+}
+
+.tags-block .title2 {
+	max-width: 220px;
+	margin-bottom: 13px;
+}
+
+.tags-grid {
+	position: relative;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background-color: #fff;
+	box-shadow: 0 -7px 0 0 #fff;
+	z-index: 10;
+}
+
+.tags-block a {
+	width: 50%;
+	max-width: 214px;
+	font-size: 33px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	box-shadow: inset 0 0 0 3px rgb(255, 201, 8);
+	padding: 7px 0 3px;
+	margin-bottom: 28px;
+	color: #242929;
+}
+
+.contacts form input:last-child:hover,
+.tags-block a:hover {
+	box-shadow: inset 0 0 0 3px #000;
+	background-color: #000;
+	color: rgb(255, 201, 8);
+}
+
+.contacts form input:last-child:active,
+.tags-block a:active {
+	transform: scale(0.94);
+}
+
+.tags-block::before {
+	height: 231px;
+}
+
+.contacts {
+	font-family: 'Open Sans', sans-serif;
+	padding: 22px 35px 22px 56px;
+	box-shadow: inset 0 0 0 1px #eef2f6;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.contacts form input:nth-child(2) {
+	margin-top: 22px;
+}
+
+.contacts form textarea,
+.contacts form input {
+	width: 100%;
+	box-sizing: border-box;
+	margin: 0 auto;
+	display: block;
+	outline: none;
+	border: none;
+	box-shadow: inset 0 0 0 1px #eef2f6;
+	border-radius: 3px;
+	background-color: #f6f8f9;
+}
+
+.contacts form textarea,
+.contacts form input {
+	height: 49px;
+	padding: 0 21px;
+	margin-bottom: 15px;
+}
+
+.contacts form label {
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 36px;
+	color: #222222;
+}
+
+.contacts form textarea {
+	height: 174px;
+	resize: none;
+	padding-top: 16px;
+}
+
+.contacts form textarea::placeholder,
+.contacts form input::placeholder {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	color: #777777;
+}
+
+.contacts form textarea:focus::placeholder,
+.contacts form input:focus::placeholder {
+	font-size: 0;
+}
+
+.contacts form input:last-child {
+  border-radius: 3px;
+  background-color: rgb(255, 201, 8);
+  width: 117px;
+  height: 52px;
+  font-size: 34px;
+  font-stretch: ultra-condensed;
+  color: #0a0a0a;
+  padding: 0;
+  text-align: center;
+}
