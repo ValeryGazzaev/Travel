@@ -123,6 +123,7 @@
 	z-index: 10;
 }
 
+.recent-posts,
 .categories-block,
 .newsletter-block {
 	position: relative;
@@ -131,6 +132,7 @@
 	box-shadow: 0px 11px 15.84px 2.16px rgba(0, 0, 0, 0.33);
 }
 
+.recent-posts::before,
 .categories-block::before,
 .newsletter-block::before {
 	position: absolute;
@@ -155,6 +157,7 @@
 	z-index: 20;
 }
 
+.recent-posts .title2,
 .categories-block	.title2,
 .newsletter-block .title2 {
 	position: relative;
@@ -231,14 +234,16 @@
 	font-size: 18px;
 }
 
+.recent-posts,
 .categories-block {
-	padding: 17px 0 11px;
+	padding: 18px 0 11px;
 }
 
 .categories-block::before {
 	height: 223px;
 }
 
+.recent-posts::after,
 .categories-block::after {
 	position: absolute;
 	content: "";
@@ -274,3 +279,52 @@
 .categories-block a:hover {
 	color: #ffc908;
 }
+.categories-block a:active {
+	color: #eee;
+}
+
+.recent-posts {
+	padding: 17px 22px 33px;
+}
+
+.recent-posts .title2 {
+	margin-bottom: 18px;
+}
+
+.recent-posts::before {
+	top: 53.3%;
+	height: 735px;
+}
+
+.recent-posts::after {
+	height: 706px;
+}
+
+.recent-posts-blocks [class^="block-"] {
+	position: relative;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	text-align: left;
+	z-index: 11;
+}
+
+.posts-text {
+	margin-left: 43px;
+}
+
+.recent-posts-blocks [class^="block-"] .image-post {
+	margin: 6.5px 0 19px;
+	width: 186px;
+	height: 104px;
+	background-image: url("../../img/marionatravel.jpg");
+}
+
+.recent-posts-blocks [class^="block-"]:nth-child(even) .image-post {
+	width: 186px;
+	height: 104px;
+	background-image: url("../../img/johntravel.jpg");
+}
+
