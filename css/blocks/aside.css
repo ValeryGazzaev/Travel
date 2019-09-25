@@ -346,7 +346,7 @@
 }
 
 .tags-block {
-	margin-bottom: 46px;
+	margin-bottom: 48px;
 	padding: 17px 0 27px;
 }
 
@@ -403,10 +403,12 @@
 
 .contacts {
 	font-family: 'Open Sans', sans-serif;
-	padding: 22px 35px 22px 56px;
-	box-shadow: inset 0 0 0 1px #eef2f6;
+	padding: 22px 35px 7px 56px;
+	border: 1px solid #eef2f6;
 	border-radius: 3px;
+	box-shadow: 0px 11px 15.84px 2.16px rgba(0, 0, 0, 0.33);
 	text-align: center;
+	z-index: 10;
 }
 
 .contacts form input:nth-child(2) {
@@ -443,9 +445,10 @@
 }
 
 .contacts form textarea {
-	height: 174px;
+	height: 188px;
 	resize: none;
-	padding-top: 16px;
+	padding-top: 13px;
+	margin-bottom: 21px;
 }
 
 .contacts form textarea::placeholder,
