@@ -3,6 +3,7 @@
 @import url('core.css');
 @import url('blocks/header.css');
 @import url('blocks/aside.css');
+@import url('blocks/main.css');
 @font-face {
     font-family: 'neotericregular';
     src: url('../assets/fonts/neotericbold-webfont.woff2') format('woff2'),

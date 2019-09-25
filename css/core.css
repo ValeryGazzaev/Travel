@@ -22,11 +22,15 @@
 .btn {
 	font-family: 'Myriad Pro', Arial, sans-serif;
 	font-weight: 700;
+	font-size: 24px;
+	line-height: 46px;
+	text-align: center;
+	letter-spacing: -0.7px;
 	text-transform: uppercase;
 	background-color: #ffc908;
 	color: #242929;
-  width: 186px;
-  height: 58px;
+  width: 150px;
+  height: 46px;
 }
 
 .btn:hover {
