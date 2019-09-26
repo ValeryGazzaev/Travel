@@ -4,17 +4,32 @@
 
 
 .night-block {
-	padding: 21px 34px;
+	position: relative;
+	padding: 21px 34px 42px;
 	box-shadow: 0px 11px 15.84px 2.16px rgba(0, 0, 0, 0.33);
 }
 
-.night-block p:nth-child(2) {
+.night-block .sub-title {
 	position: relative;
 	max-width: 460px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 36px;
 	line-height: 60px;
 	color: #282d2d;
+	margin-top: -4px;
+}
+
+.night-block .sub-title::before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 3px;
+	bottom: -11px;
+	background-color: rgba(169, 179, 227, 0.4);
+}
+
+.night-block .title3 {
+	margin-top: 1px;
 }
 
 .night-block p:nth-child(3) {
@@ -26,15 +41,7 @@
 	letter-spacing: -0.5px;
 	font-stretch: ultra-condensed;
 	color: #6c7374;
-}
-
-.night-block .sub-title::before {
-	position: absolute;
-	content: "";
-	width: 100%;
-	height: 3px;
-	bottom: 0;
-	background-color: rgba(169, 179, 227, 1);
+	margin: 28px 0 57px;
 }
 
 .block-step-text {
@@ -47,6 +54,15 @@
 	-ms-align-items: center;
 	align-items: center;
 	justify-content: space-between;
+}
+
+.block-step-text p:nth-child(2) {
+	text-transform: uppercase;
+	font-size: 28px;
+	text-indent: 45px;
+	letter-spacing: -1.6px;
+	line-height: 52px;
+	color: #a8aeae;
 }
 
 .step-text-social {
@@ -74,4 +90,83 @@
 	transform: scale(0.98);
 }
 
+.readmore {
+	position: absolute;
+	width: 608px;
+	height: 600px;
+	background-color: no-repeat;
+	background-image: url("../../img/planet.jpg");
+}
 
+.night-block .readmore {
+	top: 50%;
+	transform: translateY(-50%);
+	right: 2.7%;
+}
+
+.night-block .readmore-wrap {
+	width: 100%;
+	height: 100%;
+	display: none;
+	background-color: rgba(169, 179, 227, 0.7);
+}
+
+.night-block .readmore:hover .readmore-wrap {
+	display: block;
+}
+
+.night-block .readmore a:first-child {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 252px;
+	height: 81px;
+	transform: translate(-50%, -50%);
+	font-family: 'Myriad Pro', Arial, sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+	font-style: 28px;
+	line-height: 81PX;
+	letter-spacing: 5.6px;
+	color: #fff;
+	border-radius: 3px;
+	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.7);
+}
+
+.night-block .readmore a:first-child:hover {
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+.night-block .readmore a:first-child:active {
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+.night-block .readmore .readmore-text {
+	width: 335px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 54px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	font-style: italic;
+	font-weight: 600;
+	color: #fff;
+}
+
+.night-block .readmore .readmore-text a {
+	font-family: 'Myriad Pro', Arial, sans-serif;
+	font-weight: 600;
+	font-size: 32px;
+	font-style: italic;
+	color: #fff;
+}
+
+.night-block .readmore .readmore-text i {
+	font-size: 32px;
+}
