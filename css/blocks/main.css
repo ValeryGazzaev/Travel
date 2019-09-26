@@ -3,14 +3,14 @@
 }
 
 
-.night-block {
+.content-blocks {
 	position: relative;
 	padding: 21px 34px 42px;
+	margin-bottom: 150px;
 	box-shadow: 0px 11px 15.84px 2.16px rgba(0, 0, 0, 0.33);
 }
 
-.night-block .sub-title {
-	position: relative;
+.main .sub-title {
 	max-width: 460px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 36px;
@@ -19,20 +19,12 @@
 	margin-top: -4px;
 }
 
-.night-block .sub-title::before {
-	position: absolute;
-	content: "";
-	width: 100%;
-	height: 3px;
-	bottom: -11px;
-	background-color: rgba(169, 179, 227, 0.4);
-}
-
 .night-block .title3 {
 	margin-top: 1px;
 }
 
-.night-block p:nth-child(3) {
+.next {
+	position: relative;
 	max-width: 505px;
 	font-family: 'Myriad Pro', Arial, sans-serif;
 	font-weight: 300;
@@ -42,6 +34,15 @@
 	font-stretch: ultra-condensed;
 	color: #6c7374;
 	margin: 28px 0 57px;
+}
+
+.next::before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 3px;
+	top: -20px;
+	background-color: rgba(169, 179, 227, 0.4);
 }
 
 .block-step-text {
@@ -101,7 +102,7 @@
 .night-block .readmore {
 	top: 50%;
 	transform: translateY(-50%);
-	right: 2.7%;
+	right: 5px;
 }
 
 .night-block .readmore-wrap {
@@ -170,3 +171,24 @@
 .night-block .readmore .readmore-text i {
 	font-size: 32px;
 }
+
+.trekking-block {
+	position: relative;
+	padding: 21px 110px 42px 34px;
+}
+
+.trekking-block-wrap {
+	margin-left: 57.5%;
+}
+
+.trekking-block .readmore {
+	top: 50%;
+	width: 572px;
+	height: 598px;
+	box-shadow: 0px 24px 26.39px 2.61px rgba(0, 0, 0, 0.24);
+	left: 5px;
+	transform: translateY(-50%);
+	background-repeat: no-repeat;
+	background-image: url("../../img/road.jpg");
+}
+
