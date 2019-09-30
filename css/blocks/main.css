@@ -321,15 +321,20 @@
 .lifestyle-slider {
 	position: relative;
 	width: 1248px;
+	box-shadow: 0px 0 15.84px 2.16px rgba(0, 0, 0, 0.33);
 }
 
 .lifestyle-slider .lifestyle-block {
-	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.33);
+	box-shadow: none;
+	margin-bottom: 39px;
+}
+
+.lifestyle-slider .lifestyle-block .block-step-text {
+	padding-bottom: 0;
 }
 
 .lifestyle-slider .lifestyle-block .image-lifestyle {
 	background-image: url("../../img/field.jpg");
-
 }
 
 .lifestyle-slider input {
@@ -356,7 +361,7 @@
 
 .lifestyle-slider-controls {
 	position: absolute;
-	bottom: 0;
+	bottom: -75px;
 	left: 50%;
 	transform: translateX(-50%);
 	width: 1120px;

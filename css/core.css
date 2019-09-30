@@ -29,8 +29,8 @@
 	text-transform: uppercase;
 	background-color: #ffc908;
 	color: #242929;
-  width: 150px;
-  height: 46px;
+	width: 150px;
+	height: 46px;
 }
 
 .btn:hover {
@@ -88,4 +88,15 @@ body {
 	font-size: 24px;
 	line-height: 36px;
 	color: #575c5c;
+}
+
+
+@media (max-width: 1919px) {
+	.content {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
 }
