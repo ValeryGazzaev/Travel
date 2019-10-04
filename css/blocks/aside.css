@@ -272,7 +272,7 @@
 .categories-block a {
 	position: relative;
 	display: block;
-	width: 470px;
+	max-width: 470px;
 	font-size: 24px;
 	line-height: 57px;
 	letter-spacing: 3px;
@@ -544,9 +544,44 @@
 	}
 }
 
+@media (max-width: 1830px) {
+	.blocks {
+		width: 47%;
+		margin-left: 0;
+	}
+	.contacts {
+		width: 75%;
+		padding: 22px 35px 7px;
+		margin-bottom: 130px;
+	}
+}
+
+@media (max-width: 1350px) {
+	.contacts {
+		margin-bottom: 60px;
+		width: 100%;
+	}
+}
+
 @media (max-width: 1250px) {
 	.blocks {
 		width: 90%;
 		margin-left: 0;
 	}
+	.blocks::before {
+		display: none;
+	}
 }
+
+@media (max-width: 620px) {
+	.about-social {
+		justify-content: space-around;
+	}
+	.about-social::before {
+		width: 100%;
+	}
+	.about-social .social-btn {
+		font-size: 24px;
+	} 
+}
+

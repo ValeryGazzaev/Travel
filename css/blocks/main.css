@@ -533,5 +533,19 @@
 }
 
 @media (max-width: 1350px) {
-	
+	.readmore {
+		display: none;
+	}
+	.trekking-block,
+	.night-block {
+		display: inline-block;
+		width: 100%;
+		margin-bottom: 60px;
+	}
+	.trekking-block {
+		padding: 21px 34px 42px 34px;
+	}
+	.trekking-block-wrap {
+		margin-left: 0;
+	}
 }
