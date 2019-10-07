@@ -516,6 +516,7 @@
 		max-width: 100%;
 	}
 	.lifestyle-block .image-lifestyle {
+		-webkit-background-size: cover;
 		background-size: cover;
 	}
 	.inner-text {
@@ -540,6 +541,30 @@
 }
 
 @media (max-width: 1350px) {
+	.lifestyle-slider {
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.lifestyle-slider-slides [class^="slide-"] {
+		text-align: center;
+	}
+	[class^="slide-"] .inner-text {
+		margin: 0 auto;
+	}
+	[class^="slide-"] .lifestyle-text p:nth-of-type(1) {
+		width: 90vw;
+		margin: 0 auto;
+	}
+	[class^="slide-"] .lifestyle-text {
+		padding: 0;
+	}
+	[class^="slide-"] .block-step-text {
+		margin-top: 30px;
+	}
+	[class^="slide-"] .title3 {
+		padding: 0;
+	}
 	.trekking-block .readmore,
 	.night-block .readmore {
 		display: none;
@@ -578,16 +603,20 @@
 		width: 100%;
 		background-position: center;
 	}
+	[class^="slide-"] .block-step-text {
+		width: 90vw;
+	}
 }
 
-@media (max-width: 1030px) {
-	[class^="slide-"] .lifestyle-text p {
-		width: 95vw;
+@media (max-width: 1182px) {
+	.lifestyle-slider-controls {
+		width: 50%;
 	}
-	[class^="slide-"] .block-step-text {
-		-moz-flex-direction: row;
-		-o-flex-direction: row;
-		flex-direction: row;
+}
+
+@media (max-width: 768px) {
+	.lifestyle-slider-controls .arrows {
+		display: none;
 	}
 }
 
@@ -622,6 +651,7 @@
 		-o-flex-direction: column;
 		flex-direction: column;
 	}
+	.food-travel-text .inner-text span,
 	.inner-text span:nth-of-type(2),
 	.inner-text span:nth-of-type(3) {
 		display: none;
@@ -649,8 +679,5 @@
 	.food-travel-text p:nth-of-type(2) {
 		font-size: 24px;
 		line-height: 40px;
-	}
-	.food-travel-text .inner-text span:nth-of-type(1) {
-		display: none;
 	}
 }
