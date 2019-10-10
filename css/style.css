@@ -45,8 +45,8 @@ src: local('../assets/fonts/Bank Gothic Light BT'), url('../assets/fonts/TT0589M
 }
 
 @font-face {
-    font-family: 'Helvetica-UltraCompressed';
-    src: url('../assets/fonts/Helvetica-UltraCompressed.otf') format('otf'),
+    font-family: 'Helvetica LT 27 Ultra Light Condensed';
+    src: url('../assets/fonts/Helvetica LT 27 Ultra Light Condensed.ttf') format('truetype'),
     font-weight: 300;
     font-style: normal;
 }
